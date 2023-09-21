@@ -21,3 +21,28 @@ console.log(`Adding June expense, the expense list becomes: ${monthlyExpenses} `
 monthlyExpenses[3] = monthlyExpenses[3] - 200;
 // Make a correction to your monthly expense list based on this
 console.log(`After returning an item that I bought in a month of April and got a refund of 200$, the expense list becomes: ${monthlyExpenses} `);
+
+
+// EXERCISE 2
+// You have a list of your favourite marvel super heros.
+heros=['spider man','thor','hulk','iron man','captain america'];
+// Using this find out,
+// 1. Length of the list
+console.log(`The length of the list is: ${heros.length} `);
+// 2. Add 'black panther' at the end of this list
+heros.push('black panther ');
+console.log(`Adding black panther at the end of this list, it becomes: ${heros} `);
+// 3. You realize that you need to add 'black panther' after 'hulk', so remove it from the list first and then add it after 'hulk'
+heros.pop(); //removes the last element
+heros.splice(3,0,'black panther') //goes to element 3, removes 0 elements and adds black panther to that position
+console.log(`Removing black panther and adding it after hulk, the list becomes: ${heros} `);
+// 4. Now you don't like thor and hulk because they get angry easily. So you want to remove thor and hulk from list and replace them with doctor strange (because he is cool).
+//    Do that with one line of code.
+heros.splice(1,2,'doctor strange') //goes to element 1, removes 2 elements and adds doctor strange to that position
+console.log(`Replacing thor and hulk with doctor strange, the list becomes: ${heros} `);
+// 5. Sort the heros list in alphabetical order (Hint. Use dir() functions to list down all functions available in list)
+heros.sort();
+console.log(`Sorting the heros list in alphabetical order, it becomes: ${heros} `);
+heros.reverse();
+console.log(`Sorting the heros list in reverse alphabetical order, it becomes: ${heros} `);
+// Note that you have to use sort, before reverse, to get the correct order
