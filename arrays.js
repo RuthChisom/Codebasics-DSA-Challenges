@@ -46,3 +46,13 @@ console.log(`Sorting the heros list in alphabetical order, it becomes: ${heros} 
 heros.reverse();
 console.log(`Sorting the heros list in reverse alphabetical order, it becomes: ${heros} `);
 // Note that you have to use sort, before reverse, to get the correct order
+
+
+// EXERCISE 3
+// Create a list of all odd numbers between 1 and a max number. Max number is something you need to take from a user using input() function
+var maxNumber = parseInt(prompt(`Please enter the maximum number you want to see!!`));
+var oddNumbers = [];
+for(i=0; i<=maxNumber; i++){
+    if (i%2 != 0) oddNumbers.push(i);
+}
+console.log (`The odd numbers between 1 and ${maxNumber} are ${oddNumbers}`);
